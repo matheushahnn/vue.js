@@ -1,17 +1,20 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+    <link rel="stylesheet" href="css/jquery-ui.css">   
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">   
 	</head>
 	<body>
 		<div id="app">
 			<label for="name">Nome Produto:</label>
-		  <input id="name" v-model="newName" debounce="500"> <!-- Debounce set time to active the binding -->
+		  <input id="name" v-model="newName" debounce="0"> <!-- Debounce set time to active the binding -->
+		  <p v-show="numberName">O nome do produto permite apenas letras</p>
 		  <br />
 		  <label for="data">Data:</label>
 		  <input id="data" v-model="newDate">
 		  <br />
 		  <label for='un'>Quantidade:</label>
-		  <input id='un' type="text" v-model="newUn" number>
+		  <input id='un' type="number" v-model="newUn">
 		  <br />
 		  <button v-on:click="addProduct()">Adicinar Produto</button>
 		  <div> 
@@ -30,5 +33,7 @@
 		</div>
 	</body>
 	<script src="js/vue.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
 	<script src="js/js.js"></script>
 </html>
