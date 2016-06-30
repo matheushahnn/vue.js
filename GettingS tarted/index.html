@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="app">
+			<label for="name">Nome Produto:</label>
+		  <input id="name" v-model="newName" debounce="500"> <!-- Debounce set time to active the binding -->
+		  <br />
+		  <label for="data">Data:</label>
+		  <input id="data" v-model="newDate">
+		  <br />
+		  <label for='un'>Quantidade:</label>
+		  <input id='un' type="text" v-model="newUn" number>
+		  <br />
+		  <button v-on:click="addProduct()">Adicinar Produto</button>
+		  <div> 
+		  	<p>Nome: {{newName}}</p>
+		  	<p>Data: {{newDate}}</p>
+		  	<p>Quantidade: {{newUn}}</p>
+		  </div>
+		  <ul>
+		    <li v-for="product in products">
+		      <span>Produto: {{ product.name }} - Data: {{ product.date }} - Unid.: {{ product.un}}</span>
+		      <button v-on:click="plusUnProduct($index)">+</button>
+		      <button v-on:click="subUnProduct($index)">-</button>
+		      <button v-on:click="removeProduct($index)">X</button>
+		    </li>
+		  </ul>
+		</div>
+	</body>
+	<script src="js/vue.js"></script>
+	<script src="js/js.js"></script>
+</html>
