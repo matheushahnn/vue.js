@@ -1,3 +1,10 @@
 .challenge{
 	margin: 5em;
 }
+
+.challenge .buttons {
+	margin-top: 1em;
+}
+.challenge .buttons button {
+	margin-right: 0.3em;
+}

@@ -3,7 +3,7 @@ var vm = new Vue({
   el: '#app',
   data: {
     titleIndex: 'Treine seus conhecimento da tabuada',
-    //home: true,
+    home: false,
     challenge: true
   },  
 })
