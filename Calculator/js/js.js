@@ -1,16 +1,14 @@
 
-  Vue.directive('calculator', {
-    params: ['a'],
-    bind: function() {
-      console.log(this.params.a)
-    }
-  });
+
 var vm = new Vue({
   el: '#app',
   data: {
     titleIndex: 'Treine seus conhecimento da tabuada',
     home: true, // Show home.
-    challenge: false // Hide challenge.
+    challenge: false, // Hide challenge.
+    val1: null,
+    val2: null,
+    total: null
   },    
 })
 
