@@ -10,9 +10,10 @@
 				<div class="jumbotron">
 					<h1>{{titleIndex}}</h1>
 					<p>Escolha os números que serão usados no desafio!</p>
-					<a class="btn btn-lg btn-primary" v-on:click="selectNumbers(0)">0 à 10</a>
-					<a class="btn btn-lg btn-primary" v-on:click="selectNumbers(1)">10 à 20</a>
-					<a class="btn btn-lg btn-primary" v-on:click="selectNumbers(2)">0 à 100</a>
+					<!-- @click it is the same v-on:click-->
+					<a class="btn btn-lg btn-primary" @click="selectNumbers(0)">0 à 10</a>
+					<a class="btn btn-lg btn-primary" @click="selectNumbers(1)">10 à 20</a>
+					<a class="btn btn-lg btn-primary" @click="selectNumbers(2)">0 à 100</a>
 				</div>
 			</div>
 			<div class="row challenge" v-show="challenge" >
