@@ -35,3 +35,14 @@ var example3 = new Vue({
 })
 
 example3.items.$remove('2');
+
+new Vue({
+  el: '#repeat-object',
+  data: {
+    object: {
+      FirstName: 'John',
+      LastName: 'Doe',
+      Age: 30
+    }
+  }
+})
