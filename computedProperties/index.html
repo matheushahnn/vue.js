@@ -5,42 +5,18 @@
 	    <link rel="stylesheet" href="css/css.css">   
 	</head>
 	<body id="app">
-		<div class="container-fluid">
-			<div class="row home" v-show="home">
-				<div class="jumbotron">
-					<h1>{{titleIndex}}</h1>
-					<p>Escolha os números que serão usados no desafio!</p>
-					<!-- @click it is the same v-on:click-->
-					<a class="btn btn-lg btn-primary" @click="selectNumbers(0)">0 à 10</a>
-					<a class="btn btn-lg btn-primary" @click="selectNumbers(1)">10 à 20</a>
-					<a class="btn btn-lg btn-primary" @click="selectNumbers(2)">0 à 100</a>
-				</div>
-			</div>
-			<div class="row challenge" v-show="challenge" >
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<form class="form-inline">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" v-model="val1"/>
-									X
-									<input type="text" class="form-control" v-model="val2"/>
-									=
-									<input type="text" class="form-control" v-model="total"/>
-								</div>
-							</div>
-						</div>
-						<div class="row buttons">
-							<div class="col-md-12">
-								<button class="btn btn-success btn-block" type="button">Confirmar</button>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="col-md-2"></div>
-			</div>
-		</div>
+	<input v-model="c" />
+		a={{ a }}, b={{ b }}, c={{c}}, d={{d}}
+
+		<hr />
+
+		<p>Example of $watch</p>
+		<div id="demo1">{{fullName}}</div>
+
+		<hr />
+		<p>Example of computed</p>
+		<div id="demo">{{fullName}}</div>
+
 	</body>
 	<script src="js/vue.js"></script>
 	<script src="js/jquery.min.js"></script>
