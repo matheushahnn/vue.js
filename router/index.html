@@ -1,0 +1,20 @@
+<html>
+	<hed>
+		<meta charset="utf-8">
+	</hed>
+	<div id="app">
+	  <h1>Hello App!</h1>
+	  <p>
+	    <!-- use v-link directive for navigation. -->
+	    <a v-link="{ path: '/pag1' }">Ir para página 1</a>
+	    <a v-link="{ path: '/pag3' }">Ir para página 3</a>
+	  </p>
+	  <!-- route outlet -->
+	  <router-view></router-view>
+	</div>
+	<script src="js/vue.js"></script>
+	<script src="js/vue-router.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/js.js"></script>
+</html>
