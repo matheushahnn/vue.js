@@ -2,7 +2,9 @@
 	<hed>
 		<meta charset="utf-8">
 	</hed>
-	<div id="app">	
+	<div id="app">
+		<a v-link="{ name: 'user', params: { userId: 123 }}">User 123</a>
+		<a v-link="{ name: 'user', params: { userId: 0 }}">User 0</a>
 	  <router-view></router-view>
 	</div>
 	<script src="../js/vue.js"></script>
