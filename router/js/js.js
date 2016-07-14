@@ -17,9 +17,6 @@ var NotFound = Vue.extend({
 // !! Note that the App is not a Vue instance.
 var App = Vue.extend({})
 
-// Create a router instance.
-// You can pass in additional options here, but let's
-// keep it simple for now.
 var router = new VueRouter()
 
 // Define some routes.
